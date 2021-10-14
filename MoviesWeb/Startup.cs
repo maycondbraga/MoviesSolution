@@ -24,7 +24,7 @@ namespace MoviesWeb
             services.AddControllersWithViews();
 
             services.AddDbContext<MovieContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("byLocalDB")));
+            options.UseSqlServer(Configuration.GetConnectionString("bySQLServer")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
